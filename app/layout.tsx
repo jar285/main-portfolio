@@ -32,10 +32,29 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jesus Rosario — Developer Portfolio",
-  description:
-    "Developer portfolio — senior Web Information Systems student at NJIT, Software Engineering Intern at YU & Associates.",
-  metadataBase: null,
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || 
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+  ),
+  title: 'Jesus Rosario — Software Engineer',
+  description: 'Software Engineering Intern at YU & Associates. Full-stack developer specializing in React, Node.js, and TypeScript. NJIT WIS 2026.',
+  openGraph: {
+    title: 'Jesus Rosario — Software Engineer',
+    description: 'Full-stack developer specializing in React, Node.js, and TypeScript.',
+    url: '/',
+    siteName: 'Jesus Rosario',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jesus Rosario — Software Engineer',
+    description: 'Full-stack developer specializing in React, Node.js, and TypeScript.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

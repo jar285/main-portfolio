@@ -21,7 +21,7 @@ follows the six-step workflow defined in `agent.md`.
 | `scroll-and-motion`    | P1       | Complete    | ✅   | ✅     | ✅   | ✅  |
 | `theme-toggle`         | P2       | Complete    | ✅   | ✅     | ✅   | ✅  |
 | `interaction-polish`   | P2       | Complete    | ✅   | ✅     | ✅   | ✅  |
-| `deployment`           | P3       | Not started | —    | —      | —    | —   |
+| `deployment`           | P3       | 🏗️ In Progress | ✅   | —      | —    | —   |
 
 ## Legend
 

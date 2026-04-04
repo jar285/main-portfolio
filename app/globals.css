@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Champagne Ivory Palette (Light Mode - Approved) */
+    --background: 45 25% 97%;
+    --surface: 45 20% 93%;
+    --elevated: 45 15% 90%;
+
+    /* Foreground tiers */
+    --foreground: 222 47% 11%;
+    --muted-foreground: 215 16% 45%;
+    --faint: 220 14% 80%;
+
+    /* Accent - Unified branding */
+    --accent: 38 90% 58%;
+    --accent-subtle: 38 70% 92%;
+    --accent-foreground: 240 8% 6%;
+
+    /* Semantic */
+    --success: 142 70% 45%;
+    --warning: 38 92% 50%;
+    --error: 0 84% 60%;
+
+    /* Utility */
+    --border: 45 15% 85%;
+    --ring: 38 90% 58%;
+    --radius: 0.5rem;
+
+    /* Shadow base */
+    --shadow-color: 45 10% 20% / 0.1;
+
+    /* Section spacing */
+    --section-py: 5rem;
+    --section-py-sm: 3rem;
+    --container-max: 72rem;
+    --container-px: 1.5rem;
+  }
+
+  .dark {
+    /* Original Brutalist/Industrial Palette (Dark Mode) */
+    --background: 240 8% 6%;
+    --surface: 240 6% 10%;
+    --elevated: 240 5% 15%;
+
+    --foreground: 40 10% 92%;
+    --muted-foreground: 40 5% 55%;
+    --faint: 240 5% 35%;
+
+    --accent: 38 90% 58%;
+    --accent-subtle: 38 50% 25%;
+    --accent-foreground: 240 8% 6%;
+
+    --border: 240 6% 16%;
+    --shadow-color: 240 8% 3%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Focus-visible baseline for accessibility */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  /* Reduced motion global safety net */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto w-full;
+    padding-left: var(--container-px);
+    padding-right: var(--container-px);
+    max-width: var(--container-max);
+  }
+
+  .section-padding {
+    padding-top: var(--section-py-sm);
+    padding-bottom: var(--section-py-sm);
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: var(--section-py);
+      padding-bottom: var(--section-py);
+    }
+  }
+}

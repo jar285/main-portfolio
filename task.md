@@ -1,0 +1,17 @@
+- [ ] Task 1: Version Control (Git)
+  - [ ] 1.1: `git init` and `git branch -M main`
+  - [ ] 1.2: `git remote add origin git@github.com:jar285/main-portfolio.git`
+  - [ ] 1.3: `git commit -m "feat: complete portfolio — ready for deployment"`
+  - [ ] 1.4: `git push -u origin main` (Pause for credentials)
+- [ ] Task 2: Metadata & Social Branding
+  - [ ] 2.1: Update `app/layout.tsx` metadata (Open Graph, Twitter, title/description)
+  - [ ] 2.2: Generate `app/opengraph-image.png` (1200x630)
+  - [ ] 2.3: Generate `app/favicon.ico` (32x32)
+  - [ ] 2.4: Generate `app/apple-icon.png` (180x180)
+- [ ] Task 3: Vercel Static Deployment
+  - [ ] 3.1: Verify `next.config.ts` static export output
+  - [ ] 3.2: Confirm `out/` directory contains `opengraph-image.png`
+- [ ] Task 4: Documentation & Final Verification
+  - [ ] 4.1: Update `README.md` and `docs/_specs/README.md`
+  - [ ] 4.2: Production Lighthouse audit (Performance/A11y ≥ 90)
+  - [ ] 4.3: Final Git push

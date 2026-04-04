@@ -1,0 +1,19 @@
+- [x] Task 1: Style Token Migration
+  - [x] 1.1: Refactor `globals.css` (.dark and :root)
+  - [x] 1.2: Implement Champagne Ivory palette
+  - [x] 1.3: Update Tailwind config
+- [x] Task 2: Flicker Prevention (Head Script)
+  - [x] 2.1: Implement inline script in `layout.tsx`
+  - [x] 2.2: Resolve lint/escaping issues
+- [x] Task 3: Theme Provider & Persistence
+  - [x] 3.1: Create `ThemeProvider.tsx` with mounted check
+  - [x] 3.2: Implement persistence logic
+  - [x] 3.3: Wrap `layout.tsx` in provider
+- [x] Task 4: UI Toggle & Navigation
+  - [x] 4.1: Expand icon registry (Sun/Moon)
+  - [x] 4.2: Build `ThemeToggle` component with AnimatePresence
+  - [x] 4.3: Integrate into `Navbar.tsx`
+- [x] Task 5: Verification (Final Audit)
+  - [x] 5.1: Typecheck, Lint, Test, Format
+  - [x] 5.2: Build and Bundle Audit (< 200 KB)
+  - [x] 5.3: Visual/Lighthouse verification

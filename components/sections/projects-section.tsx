@@ -114,7 +114,7 @@ function ProjectCard({
 
   return (
     <motion.div
-      className={`flex flex-col gap-4 rounded-xl border border-border/50 bg-surface/50 p-6 transition-all duration-300 hover:border-accent/40 hover:bg-surface/80 hover:shadow-lg md:p-8 ${
+      className={`flex flex-col gap-4 rounded-xl border border-border/50 bg-surface/50 p-6 transition-colors duration-300 hover:border-accent/40 hover:bg-surface/80 hover:shadow-lg md:p-8 ${
         featured ? "md:grid md:grid-cols-2 md:gap-12" : ""
       }`}
       variants={prefersReducedMotion ? undefined : fadeUp}

@@ -8,6 +8,7 @@ import { SkipToContent } from "@/components/layout/skip-to-content";
 import { Navbar } from "@/components/layout/navbar";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { BackToTop } from "@/components/ui/back-to-top";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -33,23 +34,28 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || 
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000")
   ),
-  title: 'Jesus Rosario — Software Engineer',
-  description: 'Software Engineering Intern at YU & Associates. Full-stack developer specializing in React, Node.js, and TypeScript. NJIT WIS 2026.',
+  title: "Jesus Rosario — Software Engineer",
+  description:
+    "Software Engineering Intern at YU & Associates. Full-stack developer specializing in React, Node.js, and TypeScript. NJIT WIS 2026.",
   openGraph: {
-    title: 'Jesus Rosario — Software Engineer',
-    description: 'Full-stack developer specializing in React, Node.js, and TypeScript.',
-    url: '/',
-    siteName: 'Jesus Rosario',
-    locale: 'en_US',
-    type: 'website',
+    title: "Jesus Rosario — Software Engineer",
+    description:
+      "Full-stack developer specializing in React, Node.js, and TypeScript.",
+    url: "/",
+    siteName: "Jesus Rosario",
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Jesus Rosario — Software Engineer',
-    description: 'Full-stack developer specializing in React, Node.js, and TypeScript.',
+    card: "summary_large_image",
+    title: "Jesus Rosario — Software Engineer",
+    description:
+      "Full-stack developer specializing in React, Node.js, and TypeScript.",
   },
   robots: {
     index: true,
@@ -94,6 +100,7 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content">{children}</main>
           <BackToTop />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

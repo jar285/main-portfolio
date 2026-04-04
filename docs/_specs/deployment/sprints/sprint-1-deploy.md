@@ -7,7 +7,7 @@
 ### Task 1: Version Control (Git)
 
 - [x] 1.1: `git init` and `git branch -M main`.
-- [x] 1.2: Verify `.gitignore` (node_modules, .next, .env*, out, .vercel).
+- [x] 1.2: Verify `.gitignore` (node_modules, .next, .env\*, out, .vercel).
 - [x] 1.3: Commit: `feat: complete portfolio — ready for deployment`.
 - [x] 1.4: Push to `git@github:jar285/main-portfolio.git`.
 

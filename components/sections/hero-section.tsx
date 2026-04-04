@@ -37,7 +37,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-x-clip px-4 pt-16"
+      className="relative flex min-h-[100dvh] flex-col items-center justify-center overflow-x-clip px-4 pt-12 md:pt-16"
     >
       {/* Atmospheric background glow */}
       <div
@@ -59,7 +59,7 @@ export function HeroSection() {
       <motion.div
         className="relative z-10 flex max-w-2xl flex-col items-center text-center"
         variants={prefersReducedMotion ? undefined : containerStagger}
-        initial={prefersReducedMotion ? undefined : "hidden"}
+        initial={false}
         animate={prefersReducedMotion ? undefined : "visible"}
       >
         <motion.span

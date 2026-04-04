@@ -16,6 +16,7 @@ export interface Project {
   liveUrl?: string;
   repoUrl?: string;
   isPrivate?: boolean;
+  liveUrlLabel?: string;
 }
 
 export const projects: Project[] = [
@@ -87,5 +88,40 @@ export const projects: Project[] = [
     isFeatured: false,
     image: "",
     repoUrl: "https://github.com/jar285/user_management",
+  },
+  {
+    title: "Campus Companion",
+    problem:
+      "Students lack a unified tool to track their academic journey, from progress tracking to peer networking.",
+    outcome:
+      "Designed a comprehensive mobile companion app with schedule management, progress tracking, and peer networking features.",
+    description:
+      "A mobile app designed to help university students track academic progress and manage schedules.",
+    techStack: ["Figma", "UI/UX Design", "Mobile App Design"],
+    isFeatured: false,
+    image: "",
+    liveUrl:
+      "https://www.figma.com/design/vIh7oksGDMljicrzth29bm/Campus-Companion?node-id=21911-234988&t=kzwmpy5sgN9hVFLU-1",
+    liveUrlLabel: "View Design",
+  },
+  {
+    title: "Cosmic Connect",
+    problem:
+      "An online community needed an intuitive interface for members to share and explore space exploration content.",
+    outcome:
+      "Designed a complete design system including a member dashboard, user persona, and a marketing homepage.",
+    description:
+      "A sleek community dashboard and homepage for an online platform focused on space exploration and research.",
+    techStack: [
+      "Figma",
+      "UI/UX Design",
+      "Dashboard Design",
+      "Persona Development",
+    ],
+    isFeatured: false,
+    image: "",
+    liveUrl:
+      "https://www.figma.com/design/jQ8j0DIR8Vdsg82En3yxB2/UI-Project-Draft?node-id=0-1&p=f",
+    liveUrlLabel: "View Design",
   },
 ];

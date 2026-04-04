@@ -23,6 +23,7 @@ follows the six-step workflow defined in `agent.md`.
 | `interaction-polish`   | P2       | Complete | ✅   | ✅     | ✅   | ✅  |
 | `deployment`           | P3       | Complete | ✅   | ✅     | ✅   | ✅  |
 | `light-theme-fix`      | P0       | Complete | ✅   | ✅     | ✅   | ✅  |
+| `content-updates`      | P1       | Complete | ✅   | ✅     | ✅   | ✅  |
 
 ## Legend
 

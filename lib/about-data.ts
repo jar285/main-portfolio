@@ -24,6 +24,7 @@ export interface Education {
   location: string;
   graduationDate: string;
   details: string[];
+  certificateUrl?: string;
 }
 
 export const aboutInfo: AboutInfo = {
@@ -73,4 +74,5 @@ export const education: Education = {
     "Relevant Coursework: Building Web Applications, Designing the User Experience, Advanced Website Development, Database Design, Management & Appliance, Analysis & System Design, Discovering User Needs for UX",
     "Certifications: Certificate of Achievement in Cybersecurity (CodePath)",
   ],
+  certificateUrl: "/codepath-cybersecurity-certificate.pdf",
 };

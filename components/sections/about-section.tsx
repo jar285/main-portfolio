@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { aboutInfo, experiences, education } from "@/lib/about-data";
 import { fadeUp, staggerFast, useReducedMotion } from "@/lib/motion";
+import { ExternalLinkIcon } from "@/components/ui/icons";
 
 export function AboutSection() {
   const prefersReducedMotion = useReducedMotion();
@@ -142,14 +143,33 @@ export function AboutSection() {
               </p>
               {education.details.length > 0 && (
                 <ul className="mt-4 space-y-2">
-                  {education.details.map((detail, i) => (
-                    <li
-                      key={i}
-                      className="text-sm text-muted-foreground md:text-base"
-                    >
-                      • {detail}
-                    </li>
-                  ))}
+                  {education.details.map((detail, i) => {
+                    const isCert =
+                      detail.includes("Certifications:") &&
+                      education.certificateUrl;
+
+                    return (
+                      <li
+                        key={i}
+                        className="text-sm text-muted-foreground md:text-base"
+                      >
+                        •{" "}
+                        {isCert ? (
+                          <a
+                            href={education.certificateUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-accent hover:underline"
+                          >
+                            {detail}
+                            <ExternalLinkIcon size={14} className="shrink-0" />
+                          </a>
+                        ) : (
+                          detail
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </motion.div>

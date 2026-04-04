@@ -153,7 +153,7 @@ function ProjectCard({
               className="inline-flex items-center gap-2 rounded-sm text-sm font-medium text-accent ring-offset-background hover:underline focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
               <ExternalLinkIcon size={16} />
-              Live Demo
+              {project.liveUrlLabel || "Live Demo"}
             </a>
           )}
           {project.repoUrl && !project.isPrivate && (

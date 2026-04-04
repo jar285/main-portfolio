@@ -1,72 +1,55 @@
-# Jesus Rosario — Developer Portfolio
+# Jesus Rosario — Software Engineer
 
-Personal developer portfolio for Jesus Rosario — senior Web Information
-Systems student at NJIT (graduating May 2026), Software Engineering
-Intern at YU & Associates.
+Full-stack developer specializing in React, Node.js, and TypeScript. Engineering high-performance web experiences with an editorial aesthetic.
 
-## Tech Stack
+> [!TIP]
+> **Live URL**: [https://jesusrosario.dev](https://jesusrosario.dev) (Vercel)
 
-| Layer      | Tool                           |
-| ---------- | ------------------------------ |
-| Framework  | Next.js 16 (App Router, SSG)   |
-| Language   | TypeScript (strict mode)       |
-| Styling    | Tailwind CSS v3                |
-| UI         | shadcn/ui (Radix-based)        |
-| Animation  | Motion (Framer Motion), GSAP   |
-| Testing    | Vitest + React Testing Library |
-| Linting    | ESLint v9 (flat config)        |
-| Formatting | Prettier                       |
-| Deployment | Vercel                         |
+---
 
-## Getting Started
+## Technical Stack
 
-```bash
-npm install
-npm run dev
-```
+### **Core Architecture**
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Vanilla CSS + Tailwind Primitives
+- **Animations**: Framer Motion (`@motion/react`)
 
-Open [http://localhost:3000](http://localhost:3000).
+### **Design & Performance**
+- **Typography**: Playfair Display (Serif), Source Sans 3 (Sans), JetBrains Mono (Mono)
+- **Optimization**: Zero-dependency interaction layer, static export optimization.
+- **Accessibility**: WCAG AA Contrast, Motion-reduced support, Aria-compliant navigation.
 
-## Available Scripts
+### **Development Workflow**
+- **Testing**: Vitest + React Testing Library
+- **Linting**: ESLint + Prettier
+- **Documentation**: Markdown-driven feature specifications and implementation audits.
 
-| Script                 | Command              | Purpose                |
-| ---------------------- | -------------------- | ---------------------- |
-| `npm run dev`          | `next dev`           | Development server     |
-| `npm run build`        | `next build`         | Production build (SSG) |
-| `npm run typecheck`    | `tsc --noEmit`       | Type safety check      |
-| `npm run lint`         | `eslint .`           | Code quality check     |
-| `npm run test`         | `vitest run`         | Unit + component tests |
-| `npm run format:check` | `prettier --check .` | Formatting check       |
+---
 
-## Project Structure
+## Local Development
 
-```
-app/            → Next.js App Router pages and layout
-components/
-  layout/       → Navbar, Footer
-  sections/     → Hero, Skills, Projects, About
-  ui/           → shadcn/ui primitives + custom components
-lib/            → Utilities, constants, data, animation primitives
-docs/
-  _specs/       → Feature specs, sprint docs, QA reports
-  _changes/     → Persisted Change Notes
-public/         → Static assets (icons, images)
-```
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Documentation
+2. **Run Dev Server**:
+   ```bash
+   npm run dev
+   ```
 
-- [`agent.md`](./agent.md) — Agent operating contract
-- [`docs/_specs/README.md`](./docs/_specs/README.md) — Workstream status index
+3. **Build Static Export**:
+   ```bash
+   npm run build
+   ```
 
-## Current Status
+---
 
-**Workstream:** `site-foundation` — Complete
-**Workstream:** `design-system` — Complete
-**Workstream:** `navigation` — Complete
-**Workstream:** `hero-section` — Complete
-**Workstream:** `skills-section` — Complete
-**Workstream:** `projects-section` — Complete
-**Workstream:** `about-and-experience` — Complete
-**Workstream:** `ux-enhancements` — Complete
-**Workstream:** `footer` — Complete
-**Next:** `performance-and-a11y`
+## Deploy
+
+Deployed via **Vercel** with automated GitHub CI/CD. Configuration includes professional Open Graph metadata and branding assets for social fidelity.
+
+---
+
+© 2026 Jesus Rosario. All rights reserved.

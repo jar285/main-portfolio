@@ -3,7 +3,7 @@
 Full-stack developer specializing in React, Node.js, and TypeScript. Engineering high-performance web experiences with an editorial aesthetic.
 
 > [!TIP]
-> **Live URL**: [https://jesusrosario.dev](https://jesusrosario.dev) (Vercel)
+> **Live URL**: [https://jesusrosario.com](https://jesusrosario.com) (Vercel)
 
 ---
 

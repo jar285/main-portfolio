@@ -21,6 +21,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "LeaseLens",
+    problem:
+      "Tenants reviewing NJ residential leases face clauses that are routinely unenforceable under state law — oversized security deposits, blanket sublet bans, one-way attorney's fees, illegal late-fee structures — but legal review is expensive and time-pressured at signing. Generic LLM tools either hallucinate statute citations or refuse to give specific answers, leaving tenants to sign blind.",
+    outcome:
+      "A working agentic-AI app where every severity grading carries a NJ statute citation enforced inside the tool — the model cannot return a grading whose chunk_id isn't in the live retrieval set or whose statute string doesn't appear verbatim in that chunk's text. A two-tier eval harness (12 retrieval golden cases + 12 end-to-end lease-grading cases) gates regression in CI. Mutating tools (negotiation-email drafting) wrap every action in an audited SQLite transaction with one-click Undo, with the async LLM call running in a prepare step before the transaction opens. A custom MCP server exposes the same tool registry over stdio for Claude Desktop / Cursor / any MCP client. 507/507 tests passing across unit, integration, and E2E; ≥0.90 citation groundedness rate enforced as a CI gate.",
+    description:
+      "A NJ residential lease red-flag reviewer. Drop a lease PDF and the assistant extracts clauses, grades each against a curated 28-document NJ tenant-law corpus (statutes + case-law summaries), and renders a live red-flag report alongside the PDF with severity badges, statute citations, and recommended actions. A negotiation-email tool drafts polite landlord communications grounded in the specific concern + cited statute. Built as a portfolio piece for AI Forward Deployed / AI Product Engineer / Applied AI roles, demonstrating LLM + agent + RAG composition under real engineering constraints — RBAC (Tenant / Reviewer / Admin), audit + rollback, two-tier evaluation, and Model Context Protocol exposure.",
+    techStack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Anthropic Claude",
+      "RAG",
+      "SQLite",
+      "pdfjs-dist",
+      "Playwright",
+      "Model Context Protocol",
+    ],
+    isFeatured: true,
+    image: "",
+    repoUrl: "https://github.com/jar285/LeaseLens",
+    isPrivate: false,
+  },
+  {
     title: "YU-SURVEYSITE",
     problem:
       "Internal company workflows for PTO and surveys were manual, leading to delays in approval and documentation.",

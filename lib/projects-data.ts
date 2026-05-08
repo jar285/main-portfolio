@@ -23,9 +23,9 @@ export const projects: Project[] = [
   {
     title: "LeaseLens",
     problem:
-      "Tenants reviewing NJ residential leases face clauses that are routinely unenforceable under state law — oversized security deposits, blanket sublet bans, one-way attorney's fees, illegal late-fee structures — but legal review is expensive and time-pressured at signing. Generic LLM tools either hallucinate statute citations or refuse to give specific answers, leaving tenants to sign blind.",
+      "Tenants reviewing NJ leases encounter unenforceable clauses but lack affordable, accurate legal review. Generic LLM tools hallucinate statute citations or refuse to answer, leaving tenants to sign blind.",
     outcome:
-      "A working agentic-AI app where every severity grading carries a NJ statute citation enforced inside the tool — the model cannot return a grading whose chunk_id isn't in the live retrieval set or whose statute string doesn't appear verbatim in that chunk's text. A two-tier eval harness (12 retrieval golden cases + 12 end-to-end lease-grading cases) gates regression in CI. Mutating tools (negotiation-email drafting) wrap every action in an audited SQLite transaction with one-click Undo, with the async LLM call running in a prepare step before the transaction opens. A custom MCP server exposes the same tool registry over stdio for Claude Desktop / Cursor / any MCP client. 507/507 tests passing across unit, integration, and E2E; ≥0.90 citation groundedness rate enforced as a CI gate.",
+      "An agentic-AI app where every lease grading carries a verifiable NJ statute citation enforced inside the tool. Features audited SQLite transactions with one-click Undo, a two-tier eval harness gating CI regression, custom MCP server exposure, and 507/507 tests passing with ≥0.90 citation groundedness as a CI gate.",
     description:
       "A NJ residential lease red-flag reviewer powered by agentic AI. Upload a lease PDF to extract clauses, grade them against NJ tenant law with statute citations, and generate a red-flag report. Includes a negotiation-email tool to draft landlord communications grounded in specific concerns and legal citations.",
     techStack: [
